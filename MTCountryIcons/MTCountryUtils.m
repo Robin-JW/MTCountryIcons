@@ -12,7 +12,7 @@
 
 + (NSDictionary<NSString *,NSString *> *)countries {
     
-    NSString *bundlePath = [[NSBundle mainBundle].resourcePath stringByAppendingPathComponent:@"Countries.bundle"];
+    NSString *bundlePath = [[NSBundle mainBundle].resourcePath stringByAppendingPathComponent:@"MTCountries.bundle"];
     NSBundle *bundle = [NSBundle bundleWithPath:bundlePath];
     NSString *plistPath = [bundle pathForResource:@"Countries" ofType:@"plist"];
     NSMutableDictionary *dict = [[NSMutableDictionary alloc] initWithContentsOfFile:plistPath];
@@ -20,7 +20,7 @@
 }
 
 + (NSString *)imagePathWithCountryCode:(NSString *)countryCode {
-    NSString *bundlePath = [[NSBundle mainBundle].resourcePath stringByAppendingPathComponent:@"Countries.bundle"];
+    NSString *bundlePath = [[NSBundle mainBundle].resourcePath stringByAppendingPathComponent:@"MTCountries.bundle"];
     NSBundle *bundle = [NSBundle bundleWithPath:bundlePath];
     return [bundle pathForResource:countryCode ofType:@"png"];
 }
