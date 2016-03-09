@@ -1,7 +1,12 @@
 # MTCountryIcons
 
+## Installation with CocoaPods
+specify it in your Podfile:
+```
+pod 'MTCountryIcons', :git => 'https://github.com/gejw0623/MTCountryIcons.git'
+```
 
-## get countryList
+## getCountryList
 ```
 NSDictionary *countryNamesByCode = [MTCountryUtils countries];
 ```
